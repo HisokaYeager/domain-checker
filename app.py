@@ -5,7 +5,7 @@ import re
 from bs4 import BeautifulSoup
 
 # --- Preparation dyal l'page ---
-st.set_page_config(page_title="404 Error Domain Finder", page_icon="🔍", layout="centered")
+st.set_page_config(page_title="Domains Redirect Checker", page_icon="🔍", layout="centered")
 
 TARGET_TEXT = "404 Sorry! That page cannot be found… The URL was either incorrect, you took a wrong guess or there is a technical problem"
 
@@ -29,8 +29,8 @@ def check_single_domain(domain):
     return None
 
 # --- L'interface Web (UI) ---
-st.title("🔍 404 Error Domain Finder")
-st.markdown("Paste your domains below to find which ones return the specific 404 error page.")
+st.title("🔍 Domains Redirect Checker")
+st.markdown("Paste your domains below.")
 
 raw_domains = st.text_area("📝 Enter Domains (One per line):", height=200, placeholder="example.com\ntest.org")
 
